@@ -22,9 +22,14 @@ If you want to contribute, feel free to open a PR.
 poetry install # Install dependencies
 
 # Run the benchmark
+python bench.py --clients 25 --queries 15000 --write-percentage 0.5
+python bench.py --clients 25 --queries 15000 --write-percentage 0.5 --optimized
+
+# old
 python benchmark.py --clients 25 --queries 15000 --write-percentage 0.5 --wal --wal-optimize
 
 # Run the benchmark with a seed
+# old
 python benchmark-with-seed.py --clients 25 --queries 15000 --write-percentage 0.5 --wal --wal-optimize
 ```
 
